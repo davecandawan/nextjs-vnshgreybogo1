@@ -16,12 +16,12 @@ interface ContentProps {
 }
 
 const Content: React.FC<ContentProps> = ({
-  buttonText = 'Give Me My VNSH Holster + FREE QuickDraw Gun Magnet',
+  buttonText = 'Give Me This Buy 1, Get 1 FREE Deal Before It’s Gone!',
 }) => {
   return (
     <div className="min-h-screen bg-[url('/bg.webp')] bg-cover bg-fixed bg-repeat bg-center">
       <div className="sticky top-0 left-0 right-0 w-full bg-custom-green text-black text-center py-2 px-4 text-[1.3rem] sm:text-[1.5rem] font-semibold z-50 shadow-md">
-        FREE $39 QuickDraw Gun Magnet With Every Order!
+        Buy 1 Get 1 FREE Blowout On Limited-Run Gray Holsters!
       </div>
       <div className="w-full max-w-[1140px] mx-auto px-5 py-4 lg:px-20 bg-white">
         <div className="space-y-8">
@@ -44,9 +44,19 @@ const Content: React.FC<ContentProps> = ({
           </div>
 
           <div className="text-center my-8 md:my-10">
-            <button className="bg-[#28a745] hover:bg-[#218838] text-white font-bold py-4 px-8 text-xl md:py-3 md:px-10 md:text-3xl transition-all duration-300 animate-custom-pulse hover:opacity-100 hover:scale-105 transform">
+            <button className="bg-[#28a745] hover:bg-[#218838] text-white font-semibold py-4 px-8 text-xl md:py-5 md:px-10 md:text-[34px] transition-all duration-300 animate-custom-pulse hover:opacity-100 hover:scale-105 transform">
               {buttonText}
             </button>
+          </div>
+          <div className="mx-auto w-full md:max-w-[70%]">
+            <Image
+              src="/contentimages/Holster-Gray-BOGO.webp"
+              alt="VNSH Holster deal"
+              className="w-full h-auto"
+              width={1120}
+              height={600}
+              priority
+            />
           </div>
           <header className="text-center py-1 md:py-6">
             <span className="text-xl md:text-4xl font-bold leading-normal md:leading-[1.4]">
@@ -67,16 +77,6 @@ const Content: React.FC<ContentProps> = ({
               you’ll ever wear - or you get 100% of your money back! Try it for 60 days, and if you
               don’t like it for any reason, let us know and we’ll give you every penny back.
             </p>
-            <div className="mx-auto w-full md:max-w-[70%]">
-              <Image
-                src="/contentimages/guaranteed_banner.webp"
-                alt="VNSH Holster deal"
-                className="w-full h-auto"
-                width={1120}
-                height={600}
-                priority
-              />
-            </div>
             <p className="text-lg md:text-2xl leading-normal">
               The reason for it’s insane comfort? The materials. We combined the rugged{' '}
               <span className="font-bold">1000D Cordura</span> with a stretchy{' '}
@@ -124,7 +124,7 @@ const Content: React.FC<ContentProps> = ({
             </p>
             <div className="mx-auto w-full md:max-w-[70%]">
               <Image
-                src="/contentimages/BlackHolsterDesktop3.webp"
+                src="/contentimages/Holster-Gray-with-Gun-WEBP.webp"
                 alt="VNSH Holster deal"
                 className="w-full h-auto"
                 width={1120}
@@ -159,7 +159,7 @@ const Content: React.FC<ContentProps> = ({
             </header>
             <div className="mx-auto w-full md:max-w-[70%]">
               <Image
-                src="/contentimages/BlackHolster1.webp"
+                src="/contentimages/Holster-Gray-with-Bag-WEBP.webp"
                 alt="VNSH Holster deal"
                 className="w-full h-auto"
                 width={1120}
@@ -228,6 +228,16 @@ const Content: React.FC<ContentProps> = ({
                 Don’t Let An Uncomfortable Holster Be The Reason You’re Unarmed When Bad Guys Attack
               </span>
             </header>
+            <div className="mx-auto w-full md:max-w-[70%]">
+              <Image
+                src="/contentimages/Holster-Gray-with-Gun-2-WEBP.webp"
+                alt="VNSH Holster deal"
+                className="w-full h-auto"
+                width={1120}
+                height={600}
+                priority
+              />
+            </div>
             <p className="text-lg md:text-2xl leading-normal">
               The vast majority of gun owners don’t carry their gun daily for 1 simple reason.
             </p>
@@ -293,7 +303,7 @@ const Content: React.FC<ContentProps> = ({
             </p>
             <div className="w-full md:w-[60%] mx-auto max-w-[1120px] px-4 md:px-0">
               <Image
-                src="/contentimages/BlackHolsterDesktop2.webp"
+                src="/contentimages/VNSH_NimbusGray-LS-MOBILE.webp"
                 alt="VNSH Holster deal"
                 className="w-full h-auto"
                 width={1120}
@@ -315,17 +325,18 @@ const Content: React.FC<ContentProps> = ({
             </div>
             <header className="text-center py-1">
               <div className="text-[25px] md:text-[36px] font-bold leading-tight md:leading-[1.0] text-[rgb(255,0,0)]">
-                <div>$39 BONUS GIFT!</div>
                 <div className="my-0 md:my-2">
-                  <span className="text-[#f16500]">Get a </span>
-                  QuickDraw Gun Magnet 100% FREE
+                  <span className="text-[#f16500]">Crazy Holiday Deal!</span>
                 </div>
-                <span className="text-[#f16500]">With Your Purchase Today</span>
+                <div className="my-2">
+                  Buy 1, Get 1 FREE{' '}
+                  <span className="text-[#f16500]">On Limited-Run Nimbus Gray Holsters!</span>
+                </div>
               </div>
             </header>
-            <div className="w-full md:w-[50%] mx-auto max-w-[1120px] px-4 md:px-0">
+            <div className="w-full md:w-[60%] mx-auto max-w-[1120px] px-4 md:px-0">
               <Image
-                src="/contentimages/FREE_SGM.webp"
+                src="/contentimages/Holster-Gray-BOGO2.webp"
                 alt="VNSH Holster deal"
                 className="w-full h-auto"
                 width={1120}
@@ -334,142 +345,36 @@ const Content: React.FC<ContentProps> = ({
               />
             </div>
             <p className="text-xl md:text-2xl leading-tight">
-              Our goal today is to give you a <span className="font-bold">massive deal</span> to
-              ensure you’re{' '}
-              <span className="underline">
-                always prepared to defend your life when it matters most.
-              </span>
+              As you’ve seen… people <span className="font-bold italic">love</span> the VNSH
+              Holster.
             </p>
             <p className="text-xl md:text-2xl leading-tight">
-              That’s why we’re going to make it a{' '}
-              <span className="font-bold italic">total no-brainer</span> to order right now, by
-              giving you an <span className="font-bold underline">awesome and FREE gift!</span>
+              In fact, most people who buy one almost always{' '}
+              <span className="font-bold">end up wanting at least one more</span> – either for
+              themselves or to give to a friend or family member.
             </p>
-            <div>
-              <ul className="space-y-6 mb-6 text-xl md:text-2xl leading-tight">
-                <li className="flex flex-col md:flex-row md:items-start gap-4">
-                  <div className="flex-1">
-                    <p>
-                      Your gift is our extremely popular{' '}
-                      <span className="font-bold italic">QuickDraw Gun Magnet</span>.
-                    </p>
-                    <p>
-                      Normally it sells for $39.97… but it’s yours for nothing if you act now and
-                      accept the deal on this page today.
-                    </p>
-                    <p>
-                      And the reason people love it is because it lets you{' '}
-                      <span className="font-bold">mount your gun virtually anywhere</span> and{' '}
-                      <span className="underline">
-                        chamber, draw, and fire in{' '}
-                        <span className="font-bold">under 1.5 seconds!</span>
-                      </span>
-                    </p>
-                    <p>
-                      It’s one of the <span className="font-bold">fastest, most efficient</span>{' '}
-                      ways to deploy your firearm whenever it’s not in your concealed holster.
-                    </p>
-                  </div>
-                  <div className="w-full md:w-96 flex-shrink-0 overflow-hidden flex items-center">
-                    <div className="relative w-full h-auto">
-                      <Image
-                        src="/contentimages/VNSH-SGun-Magnet-7-5001.webp"
-                        alt="Secure Access"
-                        width={384}
-                        height={384}
-                        className="w-full h-auto object-contain"
-                      />
-                    </div>
-                  </div>
-                </li>
-
-                <li className="flex flex-col md:flex-row md:items-start gap-4">
-                  <div className="flex-1">
-                    <p className="mb-6 text-xl md:text-2xl leading-tight">Whether that's:</p>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Image
-                        src="/contentimages/check-green1.png"
-                        alt="Check"
-                        width={32}
-                        height={32}
-                        className="flex-shrink-0"
-                      />
-                      <span className="leading-none">In the car</span>
-                    </div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Image
-                        src="/contentimages/check-green1.png"
-                        alt="Check"
-                        width={32}
-                        height={32}
-                        className="flex-shrink-0"
-                      />
-                      <span className="leading-none">Under your desk</span>
-                    </div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Image
-                        src="/contentimages/check-green1.png"
-                        alt="Check"
-                        width={32}
-                        height={32}
-                        className="flex-shrink-0"
-                      />
-                      <span className="leading-none">Inside your nightstand</span>
-                    </div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Image
-                        src="/contentimages/check-green1.png"
-                        alt="Check"
-                        width={32}
-                        height={32}
-                        className="flex-shrink-0"
-                      />
-                      <span className="leading-none">By your front door</span>
-                    </div>
-                    <div className="flex items-center gap-2 mb-6">
-                      <Image
-                        src="/contentimages/check-green1.png"
-                        alt="Check"
-                        width={32}
-                        height={32}
-                        className="flex-shrink-0"
-                      />
-                      <span className="text-xl md:text-2xl leading-tight">
-                        Or just about anywhere!
-                      </span>
-                    </div>
-                    <p className="text-xl md:text-2xl leading-tight mt-4">
-                      It gives you back{' '}
-                      <span className="font-bold italic">
-                        precious, life-saving seconds of reaction time
-                      </span>{' '}
-                      in the moments where you need it most!
-                    </p>
-                  </div>
-                  <div className="w-full md:w-96 flex-shrink-0 overflow-hidden flex items-center">
-                    <div className="relative w-full h-auto">
-                      <Image
-                        src="/contentimages/VNSH-SGun-Magnet-4-5001.webp"
-                        alt="Secure Access"
-                        width={384}
-                        height={384}
-                        className="w-full h-auto object-contain"
-                      />
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
             <p className="text-xl md:text-2xl leading-tight">
-              1000s of people have <span className="font-bold italic">happily paid full price</span>{' '}
-              for the QuickDraw Gun Magnet…
+              So since the holidays are right around the corner…
             </p>
-            <p className="text-xl md:text-2xl leading-tight font-bold">
-              But it’s yours totally FREE when you accept this deal today!
+            <p className="text-xl md:text-2xl leading-tight">
+              And because we want to{' '}
+              <span className="font-bold italic">celebrate releasing our NEW Nimbus Gray</span>{' '}
+              version of the VNSH Holster…
+            </p>
+            <p className="text-xl md:text-2xl leading-tight">
+              We’re giving you the{' '}
+              <span className="font-bold">biggest deal we’ve EVER offered!</span>
+            </p>
+            <p className="text-xl md:text-2xl leading-tight font-extrabold">
+              <span className="bg-[#ff0] ">Buy 1 Nimbus Gray Holster, Get 1 Totally FREE!!</span>
+            </p>
+            <p className="text-xl md:text-2xl leading-tight">
+              Plus, when you grab this deal today, you’ll be doing so{' '}
+              <span className="font-bold">100% Risk-Free, because…</span>
             </p>
             <header className="text-center py-1">
               <div className="text-[25px] md:text-[36px] font-bold leading-tight md:leading-[1.0] text-[#f16500]">
-                <div>Plus, You’re Getting An</div>
+                <div>You’re Getting An</div>
                 <div className="my-0 md:my-2">
                   <span className="text-[rgb(255,0,0)]">Iron-Clad, Money-Back </span>
                   <span>Guarantee</span>
@@ -486,43 +391,91 @@ const Content: React.FC<ContentProps> = ({
                 priority
               />
             </div>
-            <p className="text-xl md:text-2xl font-medium leading-tight">
+            <p className="text-xl md:text-2xl leading-tight">
               Love everything about your order, or{' '}
               <b>
                 <em>we’ll refund you every penny.</em>
               </b>
             </p>
-            <p className="text-xl md:text-2xl font-medium leading-tight">It’s that simple.</p>
-            <p className="text-xl md:text-2xl font-medium leading-tight">
+            <p className="text-xl md:text-2xl leading-tight">It’s that simple.</p>
+            <p className="text-xl md:text-2xl leading-tight">
               If you aren’t totally thrilled, all you have to do is contact our{' '}
               <span className="font-bold">
                 <span className="italic">US-Based Support Team</span>
               </span>{' '}
               within 60 days to get a full refund.
             </p>
-            <p className="text-xl md:text-2xl font-medium leading-tight">
-              <span className="bg-[#ff0] py-1">
+            <p className="text-xl md:text-2xl leading-tight">
+              <span className="bg-[#ff0] font-bold">
                 Plus, we also give you a{' '}
-                <span className="font-bold">
+                <span className="font-extrabold">
                   <span className="italic">2-year workmanship guarantee</span>
                 </span>{' '}
                 as well!
               </span>
             </p>
-            <p className="text-xl md:text-2xl font-medium leading-tight">
+            <p className="text-xl md:text-2xl leading-tight">
               We know you’ll love your VNSH gear, which is why we’re happy to extend you these
               iron-clad guarantees.
             </p>
-            <p className="text-xl md:text-2xl font-medium leading-tight">
-              So if you want to get an awesome price on the world’s most comfortable holster…
+            <p className="text-xl md:text-2xl leading-tight">
+              So if you want the <span className="font-bold italic">comfiest holster on earth</span>{' '}
+              … plus a second one{' '}
+              <span className="font-bold italic">totally FREE on the house</span> …
             </p>
-            <p className="text-xl md:text-2xl font-medium leading-tight">
-              <span className="font-bold">
-                <span className="italic">Plus… get a FREE QuickDraw gun magnet with it…</span>
-              </span>
+            <p className="text-xl md:text-2xl leading-tight">
+              Plus… get a FREE VNSH Holster with it…
             </p>
-            <p className="text-xl md:text-2xl font-medium leading-tight">
+            <p className="text-xl md:text-2xl leading-tight">
               Then you owe it to yourself to grab this deal now!
+            </p>
+            <div className="text-center my-8 md:my-10">
+              <button className="bg-[#28a745] hover:bg-[#218838] text-white font-bold py-4 px-8 text-xl md:py-3 md:px-10 md:text-3xl transition-all duration-300 animate-custom-pulse hover:opacity-100 hover:scale-105 transform">
+                {buttonText}
+              </button>
+            </div>
+            <div className="text-center my-8">
+              <p className="text-xl md:text-1xl font-semibold leading-normal md:leading-tight text-red-600">
+                <span className="bg-[#ff0] px-2 py-1">
+                  60 Days to Try It Yourself… Love It Or You Don't Pay a Dime!
+                </span>
+              </p>
+            </div>
+            <header className="text-center py-1">
+              <div className="text-[25px] md:text-[36px] font-bold leading-tight md:leading-[1.0] text-[#f16500]">
+                <div>Fair Warning…</div>
+                <div className="my-0 md:my-2">
+                  Last Big Deal <span className="text-[rgb(255,0,0)]">Before Prices Go Up…</span>
+                </div>
+              </div>
+            </header>
+            <p className="text-xl md:text-2xl leading-tight">
+              Since we launched in late 2022, we’ve done everything in our power to keep the VNSH
+              Holster <span className="font-bold italic">as affordable as possible</span>.
+            </p>
+            <p className="text-xl md:text-2xl leading-tight">
+              But sadly, inflation is finally forcing us to raise prices on our holster.
+            </p>
+            <p className="text-xl md:text-2xl leading-tight">
+              Now, as much of a bummer as that is… the <span className="font-bold">GOOD NEWS</span>{' '}
+              is that…
+            </p>
+            <p className="text-xl md:text-2xl leading-tight">
+              We’re running this huge{' '}
+              <span className="font-extrabold underline bg-[#ff0]">Buy 1, Get 1 FREE deal</span> to
+              make sure everyone has a chance to get the VNSH Holster for an awesome price before it
+              becomes more expensive in the weeks ahead.
+            </p>
+            <p className="text-xl md:text-2xl leading-tight">
+              It won’t last forever though… and neither will these limited-run Nimbus Gray holsters…
+            </p>
+            <p className="text-xl md:text-2xl leading-tight">
+              Once this is over, you’ll never see a deal this good on VNSH Holsters again.
+            </p>
+            <p className="text-xl md:text-2xl leading-tight">So don’t wait!</p>
+            <p className="text-xl md:text-2xl leading-tight font-bold">
+              Grab your Nimbus Gray VNSH Holster and{' '}
+              <span className="bg-[#ff0]">get a second one 100% FREE</span> while you still can!
             </p>
             <div className="text-center my-8 md:my-10">
               <button className="bg-[#28a745] hover:bg-[#218838] text-white font-bold py-4 px-8 text-xl md:py-3 md:px-10 md:text-3xl transition-all duration-300 animate-custom-pulse hover:opacity-100 hover:scale-105 transform">

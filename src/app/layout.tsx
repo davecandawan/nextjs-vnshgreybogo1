@@ -5,15 +5,15 @@ import '@/styles/globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'VNSH Holster + FREE QuickDraw Gun Magnet',
-  description: 'Premium gun holsters and accessories',
+  title: 'Top Concealed Carry Holster - VNSH Gray BOGO',
+  description: 'Buy 1 Get 1 FREE Blowout On Limited-Run Gray Holsters!',
   icons: {
     icon: '/favicon.png',
     apple: '/favicon.png',
   },
   openGraph: {
-    title: 'VNSH Holster + FREE QuickDraw Gun Magnet',
-    description: 'Premium gun holsters and accessories',
+    title: 'Top Concealed Carry Holster - VNSH Gray BOGO',
+    description: 'Buy 1 Get 1 FREE Blowout On Limited-Run Gray Holsters!',
     type: 'website',
     images: [
       {
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'VNSH Holster + FREE QuickDraw Gun Magnet',
-    description: 'Premium gun holsters and accessories',
+    title: 'Top Concealed Carry Holster - VNSH Gray BOGO',
+    description: 'Buy 1 Get 1 FREE Blowout On Limited-Run Gray Holsters!',
     images: ['/favicon.png'],
   },
 };
