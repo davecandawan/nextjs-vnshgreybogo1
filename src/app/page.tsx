@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 // Import critical components directly
 import Navbar from '@/components/Navbar/Navbar';
@@ -24,6 +25,13 @@ const BackgroundWrapper = ({ children }: { children: React.ReactNode }) => (
   </div>
 );
 
+const getCheckoutUrl = (baseUrl: string) => {
+  const searchParams = useSearchParams();
+  const params = new URLSearchParams(searchParams.toString());
+  const queryString = params.toString();
+  return `${baseUrl}${queryString ? `?${queryString}` : ''}`;
+};
+
 export default function Home() {
   return (
     <>
@@ -36,9 +44,14 @@ export default function Home() {
           <BackgroundWrapper>
             <Faqs />
             <div className="text-center my-8 md:my-10">
-              <button className="bg-[#28a745] hover:bg-[#218838] text-white font-bold py-4 px-8 text-xl md:py-3 md:px-10 md:text-3xl transition-all duration-300 animate-custom-pulse hover:opacity-100 hover:scale-105 transform">
-                Give Me This Buy 1, Get 1 FREE Deal Before It's Gone!
-              </button>
+              <a
+                href={getCheckoutUrl('https://secure.vnsh.com/vnshgreybogo1/checkout')}
+                className="inline-block"
+              >
+                <button className="bg-[#28a745] hover:bg-[#218838] text-white font-bold py-4 px-8 text-xl md:py-3 md:px-10 md:text-3xl transition-all duration-300 animate-custom-pulse hover:opacity-100 hover:scale-105 transform">
+                  Give Me This Buy 1, Get 1 FREE Deal Before It's Gone!
+                </button>
+              </a>
             </div>
             <div className="text-center my-8">
               <p className="text-xl md:text-1xl font-semibold leading-normal md:leading-tight text-red-600">
