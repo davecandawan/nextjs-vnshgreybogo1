@@ -352,6 +352,10 @@ const Content: React.FC<ContentProps> = ({
                 </span>
               </p>
             </div>
+            <p className="text-xs md:text-xs leading-tight">
+              *This is for demonstration purposes only, we are not licensed to sell weapons. Gun not
+              included with holster.
+            </p>
             <header className="text-center py-1">
               <div className="text-[25px] md:text-[36px] font-bold leading-tight md:leading-[1.0] text-[rgb(255,0,0)]">
                 <div className="my-0 md:my-2">
