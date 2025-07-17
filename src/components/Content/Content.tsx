@@ -29,8 +29,13 @@ const Content: React.FC<ContentProps> = ({
   };
   return (
     <div className="min-h-screen bg-[url('/bg.webp')] bg-cover bg-fixed bg-repeat bg-center">
-      <div className="sticky top-0 left-0 right-0 w-full bg-custom-green text-black text-center py-2 px-4 text-[1.3rem] sm:text-[1.5rem] font-semibold z-50 shadow-md">
-        Buy 1 Get 1 FREE Blowout On Limited-Run Gray Holsters!
+      <div className="sticky top-0 left-0 right-0 w-full bg-custom-green text-center py-2 px-4 text-[1.3rem] sm:text-[1.5rem] font-semibold z-50 shadow-md">
+        <a
+          href={getCheckoutUrl('https://secure.vnsh.com/vnshgreybogo1/checkout')}
+          className="inline-block text-black hover:no-underline hover:text-black"
+        >
+          Buy 1 Get 1 FREE Blowout On Limited-Run Gray Holsters!
+        </a>
       </div>
       <div className="w-full max-w-[1140px] mx-auto px-5 py-4 lg:px-20 bg-white">
         <div className="space-y-8">
@@ -557,23 +562,7 @@ const Content: React.FC<ContentProps> = ({
                 />
               </div>
             </div>
-            <div className="text-center my-8 md:my-10">
-              <a
-                href={getCheckoutUrl('https://secure.vnsh.com/vnshgreybogo1/checkout')}
-                className="inline-block"
-              >
-                <button className="bg-[#28a745] hover:bg-[#218838] text-white font-bold py-4 px-8 text-xl md:py-3 md:px-10 md:text-3xl transition-all duration-300 animate-custom-pulse hover:opacity-100 hover:scale-105 transform">
-                  {buttonText}
-                </button>
-              </a>
-            </div>
-            <div className="text-center my-8">
-              <p className="text-xl md:text-1xl font-semibold leading-normal md:leading-tight text-red-600">
-                <span className="bg-[#ff0] px-2 py-1">
-                  60 Days to Try It Yourself… Love It Or You Don't Pay a Dime!
-                </span>
-              </p>
-            </div>
+            <hr className="my-8 border-t border-gray-200" />
           </div>
         </div>
       </div>
